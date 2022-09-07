@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /*font-family: 'Fredoka One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800;900&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,900;1,200;1,300;1,400&display=swap'); /*font-family: 'Nunito', sans-serif;*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fredoka One', cursive;
+	font-size: 16px;
+	text-decoration: none;
+}
+body{
+	background: #1D1D1D;
+}
+
+/* ------------ SCROLLBAR ------------*/
+::-webkit-scrollbar{
+	width: 6px;
+}
+::-webkit-scrollbar-thumb{
+	background: #00ff30;
+	border-radius: 6px;
+}
+/* ------------ FIN SCROLLBAR ------------*/
+
+
+/* ----- NAV ----- */
+.container_header{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	transition: all 300ms;
+}
+
+.container_navbar{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.container_logo{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.container_logo img{
+	width: 220px;
+	transition: transform 300ms;
+}
+.container_logo img:hover{
+	transform: scale(1.1);
+}
+
+.container_nav{
+	position: relative;
+	height: 100%;
+}
+.container_nav nav{
+	height: 100%;
+}
+.container_nav nav img{
+	width: 60px;
+	display: none;
+}
+.container_nav nav ul{
+	height: 100%;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container_nav nav ul li{
+	margin: 0 20px;
+}
+.container_nav nav ul li a{
+	color: #fff;
+	transition: color 300ms;
+}
+.container_nav nav ul li a:hover{
+	color: #00ff30;
+}
+
+/* ----- FIN NAV ----- */
+
+/*--- WHATSAPP --*/
+.container_whatsapp{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	background: #00ff30;
+	border-radius: 50%;
+	transition: all 300ms;
+}
+.container_whatsapp a{
+	color: #000;
+	cursor: pointer;
+}
+.container_whatsapp a i{
+	font-size: 40px;
+	padding: 8px;
+}
+.container_whatsapp:hover{
+	box-shadow: 1px 1px 10px 0px #00ff30;
+}
+/*--- FIN WHATSAPP --*/
+
+
+/* ----- INTRO ----- */
+.container_intro{
+	width: 100%;	
+	margin-top: 100px;
+}
+
+.container_all{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container_parrafo{
+	width: 60%;
+	padding: 20px 40px;
+	color: #fff;
+	text-align: justify;
+}
+.container_parrafo h1{
+	font-size: 40px;
+	font-weight: 100;
+}
+.container_parrafo h1 b{
+	font-size: 40px;
+	font-weight: 100;
+	color: #00ff30;
+}
+.container_parrafo p{
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+.container_costado{
+	width: 20%;
+	height: 100%;
+	overflow: 2px solid red;
+}
+.container_parimg{
+	width: 320px;
+	height: 400px;
+		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+	border-radius: 15px;
+	overflow: hidden;
+	background: #fff;
+}
+.container_parimg img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.container_parimg h1{
+	font-size: 30px;
+	font-weight: 100;
+	padding: 10px;
+}
+.container_parimg p{
+	padding: 0 10px;
+}
+.container_parimg button{
+	padding: 10px 10px;
+	margin: 10px;
+	background: #00ff30;
+	border-radius: 20px;
+	border: none;
+	transition: transform 300ms;
+}
+.container_parimg button:hover{
+	transform: scale(1.1);
+}
+
+
+/* ----- FIN INTRO ----- */
+
+
+
+/* ----- PRESENTACION ----- */
+.container_presentacion{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.bg_image{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(rgba(69, 69, 69, 0.3), rgba(69, 69, 69, 0.3)), url('../img/bg_image.jpeg') no-repeat center center/cover;
+}
+
+.bg_pres{
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	padding: 20px;
+	text-align: center;
+}
+.bg_pres h1{
+	font-size: 35px;
+	font-weight: 100;
+	background: none;
+}
+.bg_pres button{
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 10px 40px;
+	border-radius: 20px;
+	border: none;
+	background: #00ff30;
+	transition: all 300ms;
+	cursor: pointer;
+}
+.bg_pres button:hover{
+	box-shadow: 1px 1px 10px 0px #00ff30;
+	background: rgba(0, 255, 48, 0.8);
+}
+
+/* ----- FIN PRESENTACION ----- */
+
+/* ----- PLAYLIST ----- */
+.container_playlist{
+	width: 100%;
+	height: 250px;
+	margin-top: 50px;
+	color: #fff;
+}
+.container_info{
+	width: 250px;
+	height: 100px;
+	border: 3px solid #f1f1f1;
+	border-radius: 10px;
+	display: flex;	
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 10px;
+	margin: 0 20px;
+	background: rgba(0, 0, 0, 0.4);
+}
+.container_info h1{
+	font-size: 35px;
+	font-weight: 100;
+}
+.container_info p{
+	font-size: 20px;
+}
+.playlist_button{
+	padding: 10px 30px;
+	border: none;
+	border-radius: 20px;
+	background: #00ff30;
+	margin: 0 20px;
+	transition: all 300ms;
+}
+.playlist_button:hover{
+	box-shadow: 1px 1px 10px 0px #00ff30;
+	background: rgba(0, 255, 48, 0.8);
+}
+
+.container_pl1{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	border-radius: 20px;
+	border: 3px solid #f1f1f1;
+	background: linear-gradient(rgba(69, 69, 69, 0.3), rgba(69, 69, 69, 0.3)), url('../img/musica/rock.jpeg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container_pl2{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	border-radius: 20px;
+	border: 3px solid #f1f1f1;
+	background: linear-gradient(rgba(69, 69, 69, 0.3), rgba(69, 69, 69, 0.3)), url('../img/musica/blues.jpeg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container_pl3{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	border-radius: 20px;
+	border: 3px solid #f1f1f1;
+	background: linear-gradient(rgba(69, 69, 69, 0.3), rgba(69, 69, 69, 0.3)), url('../img/musica/pop.jpg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/* ----- FIN PLAYLIST ----- */
+
+
+
+/* ----- FOOTER ----- */
+footer{
+	width: 100%;
+	padding: 50px 0px;
+	font-family: 'Nunito', sans-serif;
+	color: #A7A7A7;
+	background: #000;
+	margin-top: 100px;
+}
+
+.container_footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+}
+
+.box-footer{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+.box-footer .logo img{
+	width: 250px;
+}
+
+.box-footer .terms{
+	max-width: 350px;
+	margin-top: 20px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.box-footer h2{
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #C3C3C3;
+}
+.box-footer a{
+	color: #A7A7A7;
+	margin-bottom: 10px;
+}
+
+
+.box-copyright{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 0 40px;
+}
+.box-copyright p{
+	margin-top: 20px;
+}
+.box-copyright hr{
+	border: none;
+	height: 1px;
+	background: #A7A7A7;
+}
+
+.redes_footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.redes_footer .icon-redes-footer{
+	font-size: 20px;
+	margin: 10px 20px;
+	background: #A7A7A7;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	color: #DEDEDE;
+	transition: all 300ms;
+}
+
+.redes_footer .fa-facebook-f:hover{
+	background: #41579A;
+	color: #fff;
+}
+
+.redes_footer .fa-instagram:hover{
+	background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #A34198, #7540A1, #5443AB);
+	color: #fff;
+}
+
+.redes_footer .fa-whatsapp:hover{
+	background: #25d366;
+	color: #fff;
+}
+
+/* ----- FIN FOOTER ----- */
+
+
+
+
+/* ----- MEDIA ----- */
+.btn-menu{
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: background 300ms;
+	color: #fff;
+	display: none;
+}
+.btn-menu:hover{
+	background: #00ff30;
+	color: #000;
+}
+
+.move-content{
+	right: 150px;
+}
+
+.nav-mod{
+	box-shadow: 1px 1px 10px 0px #000;
+	background: #000;
+}
+
+@media screen and (max-width: 760px){
+	.container_nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-menu{
+		display: flex;
+	}
+
+	.container_nav nav{
+		height: 100%;
+		position: fixed;
+		background: #000;
+		top: 0;
+		right: -180px;
+		padding: 0 40px;
+		transition: all 300ms;
+	}
+
+	.container_nav nav.move-nav{
+		right: 0px;
+	}
+
+	.container_nav nav ul{
+		flex-direction: column;
+	}
+
+	.container_nav nav ul li{
+		margin: 20px 0;
+	}
+
+	.container_nav nav img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 20px;
+		right: 50px;
+	}
+
+
+	.bg_pres{
+		width: 60%;
+	}
+
+
+	.container_whatsapp a i{
+		font-size: 35px;
+		padding: 8px;
+	}
+
+
+	.container_all{
+		flex-direction: column;
+	}
+	.container_parrafo{
+		width: 100%;
+	}
+	.container_costado{
+		width: 100%;
+	}
+	.container_parimg{
+		width: 250px;
+		margin: auto;
+	}
+	.container_parimg button{
+		margin-top: 24px;
+	}
+
+
+	.container_footer{
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.bg_pres{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 460px){
+	.bg_pres{
+		width: 80%;
+	}
+	.bg_pres h1{
+		font-size: 30px;
+	}
+	.bg_pres button{
+		padding: 10px 20px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 650px){
+	.container_pl1{
+		width: 90%;
+	}
+	.container_pl2{
+		width: 90%;
+	}
+	.container_pl3{
+		width: 90%;
+	}
+
+	.container_info h1{
+		font-size: 25px;
+	}
+	.container_info p{
+		font-size: 15px;
+	}
+	.playlist_button{
+		font-size: 15px;
+		padding: 10px 20px;
+	}
+}
+
+
+/* ----- FIN MEDIA ----- */
